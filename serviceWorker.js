@@ -1,8 +1,11 @@
 self.addEventListener("install", (e) => {
-  console.log("install");
   e.waitUntil(
     caches.open("static").then((cache) => {
-      return cache.addAll(["./", "./assets/logo.png", "./assets/tailwind.css"]);
+      return cache.addAll([
+        "./",
+        "./assets/logo.png",
+        "https://cdn.tailwindcss.com/3.1.8",
+      ]);
     })
   );
 });
