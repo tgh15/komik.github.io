@@ -3,5 +3,18 @@
     "short_name" : "Tgh15",
     "start_url" : ".",
     "background_color" : "#fcbe6f",
-    "theme_color" : "#6f81fc"
+    "theme_color" : "#6f81fc",
+    "display" : "standalone",
+    "icons":[
+        {
+            "src" : "assets/logo.png",
+            "sizes" : "192x192",
+            "type": "image/png"
+        },
+        {
+            "src" : "assets/logo.png",
+            "sizes" : "512x512",
+            "type": "image/png"
+        }
+    ]
 }
